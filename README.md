@@ -10,11 +10,11 @@ How to use?
 Include jquery.tabledataslider.js in the head of the webpage: 
 &lt;script src="pathto/jquery.tabledataslider.js"&gt;&lt;/script&gt; where pathto is the relative path to the directory where the script is stored.
 <ol>
-<li>TR-elements (A) must have an id composed of a prefix (ig 'data') and a number (ig '567'). 
+<li>TR-elements (A) must have an id composed of a prefix (ig 'data') and a number (ig '567').<br>
 	For example: &lt;tr id="data567"&gt;</li>
-</li>TD-elements (B) must have an id composed of a prefix (ig 'detail') and a number (ig '567'). 
+<li>TD-elements (B) must have an id composed of a prefix (ig 'detail') and a number (ig '567').<br>
 	For example: &lt;td id="detail567"&gt;</li>
-<li>Numbers in id's of TR-elements (A) and corresponding TD-elements (B) should match.
+<li>Numbers in id's of TR-elements (A) and corresponding TD-elements (B) should match.<br>
 	For example: '567' in &lt;tr id="data567"&gt; matches '567' in &lt;td id="detail567"&gt;</li>
 </ol>
 TR-elements (A) can have a class attribute to be used as a selector. For example: &lt;tr class="data" ... &gt;
