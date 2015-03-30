@@ -10,7 +10,7 @@
 		<script>
 			$(function(){
 				$('tr.data').tabledataslider({detailIdPrefix:'detail'});
-				$('tr#data4').tabledataPerformSlide(true);
+				$('tr#data4').tabledataPerformSlide(true); 
 			});
 		</script>		
 	</head>
