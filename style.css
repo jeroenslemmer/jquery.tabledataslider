@@ -1,0 +1,67 @@
+* {	
+	padding : 0;
+}
+
+body {
+	font-family : Verdana;
+	font-size : 11px;
+}
+
+table.data td, table.data th {
+	border : 1px solid #ccc;
+	text-align : left;
+}
+
+table.data {
+	border-collapse : collapse;
+	width : 800px;
+}
+
+table.data tr.data td, table.data th {
+	padding :  2px 5px;
+}
+
+tr.data {
+	cursor : pointer;
+}
+
+tr.details table td{
+	border : 1px solid #ddd;
+	padding : 0 3px;
+}
+
+tr.details td table h4 {
+	margin: 10px 0 3px 0;
+}
+
+tr.details td table{
+	width : 100%;
+	border-collapse : collapse;
+}
+tr.details, tr.details a {
+	background-color : #f6f6f0;
+	color : #666;
+	text-decoration : none;
+}
+
+tr.details a:hover {
+	text-decoration : underline;
+}
+
+td.review-title{
+	font-size : 14px;
+	font-weight : bold;
+	color : #999;
+	border-bottom : 1px #f6f6f6 solid !important;
+}
+
+td.review-grade {
+	border-bottom : 1px #f6f6f6 solid !important;
+}
+
+/* attribute set by tabledataPerformSlide */
+tr[tabledata-slider=opened] {
+	background-color : #ffd;
+}
+
+
