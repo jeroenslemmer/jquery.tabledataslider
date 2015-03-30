@@ -19,7 +19,7 @@
 <li>TR-elements (A) can have a class attribute to be used as a selector. For example: &lt;tr class="data" ... &gt;</li>
 </ol>
 <h4>Activation</h4>
-<p>Activate them by invoking: $(selector).tabledataslider(options) where options is an object.<br>For example: $('tr.data').tabledataslider({detailIdPrefix:'detail'})<br>
+<p>Activate them (after page loading) by invoking: $(selector).tabledataslider(options) where options is an object.<br>For example: $('tr.data').tabledataslider({detailIdPrefix:'detail'})<br>
 Possible options and its defaults: see below...</p>
 
 <p>After activating you can also open/close elements by invoking: $(selector).tabledataPerformSlide(open); where open: true or false.</p>
