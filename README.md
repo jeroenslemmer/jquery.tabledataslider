@@ -6,6 +6,7 @@
 <p>The plugin enables  TR-elements (A) (by click event) to open/close corresponding detail data in TD-elements (B) in the same or other rows.</p>
 	
 <h3>How to use?</h3>
+<h4>The plugin script</h4>
 <p>Include jquery.tabledataslider.js in the head of the webpage:<br>
 &lt;script src="pathto/jquery.tabledataslider.js"&gt;&lt;/script&gt; where pathto is the relative path to the directory where the script is stored.</p>
 <h4>Requirements</h4>
