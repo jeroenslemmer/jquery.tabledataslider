@@ -1,7 +1,7 @@
 # jquery.tabledataslider
 jQuery plugin for sliding data in a table
 
-As as far as we know, sliding in and out, showing and hiding of contentblocks is not supported for data in a html table. 
+As as far as we know, sliding in and out, showing and hiding of contentblocks is not supported by jQuery of known plugins for data in a html table. 
 This project is supposed to provide for this functionality.
 
 The plugin enables  TR-elements (A) (by click event) to open/close corresponding detail data in TD-elements (B) in the same or other rows.
