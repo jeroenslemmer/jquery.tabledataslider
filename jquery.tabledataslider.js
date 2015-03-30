@@ -6,11 +6,14 @@
 	Version: 1.0
 	Description: Enable (by event) TR-elements (A) to open/close corresponding detail data in TD-elements (B) in the same or other rows.
 
-	TR-elements A must have an id composed of a prefix (ig 'data') and a number (ig '567'). For example id: 'data567'
-	TD-elements B must have an id composed of a prefix (ig 'detail') and a number (ig '567'). For example id: 'detail567'
-	Numbers in id's of TR-elements A and corresponding TD-elements B should match. For example: '567' in 'data567' matches '567' in 'detail567'
+	TR-elements A must have an id composed of a prefix (ig 'data') and a number (ig '567'). 
+	For example: <tr id="data567">
+	TD-elements B must have an id composed of a prefix (ig 'detail') and a number (ig '567'). 
+	For example: <td id="detail567">
+	Numbers in id's of TR-elements A and corresponding TD-elements B should match.
+	For example: '567' in <tr id="data567"> matches '567' in <td id=detail567">
 	
-	TR-elements A can have a class attribute to be used as a selector. For example: 'data'
+	TR-elements A can have a class attribute to be used as a selector. For example: <tr class="data" ... >
 	
 	Activate them by invoking: $(selector).tabledataslider(options) where options is an object. For example: $('tr.data').tabledataslider({detailIdPrefix:'detail'})
 	Possible options and its defaults: see below.
