@@ -5,6 +5,9 @@
   Author: Jeroen Slemmer
 	Version: 1.0
 	Description: Enable (by event) TR-elements (A) to open/close corresponding detail data in TD-elements (B) in the same or other rows.
+	
+	Include jquery.tabledataslider.js in the head of the webpage: 
+	<script src="pathto/jquery.tabledataslider.js"></script> where pathto is the relative path to the directory where the script is stored.
 
 	TR-elements A must have an id composed of a prefix (ig 'data') and a number (ig '567'). 
 	For example: <tr id="data567">
@@ -49,12 +52,12 @@
 			if ($(this).prop('tagName')!= 'TR')throw new Error('Only TR elements can trigger a tabledata slider. Element is a '+$(this).prop('tagName'));
 			// find details
 			var masterId = $(this).attr('id');
-			if (typeof masterId == 'undefined')throw new Error('TR trigger elements must have an id to trigger a tabledata slider.');
+			if (typeof masterId == 'undefined')throw new Error('TR elements must have an id to trigger a tabledata slider.');
 			var match = /(\d+)/g.exec(masterId);
-			if (match == null || match.length == 0) throw new Error('TR trigger element id must contain a number.');
+			if (match == null || match.length == 0) throw new Error('TR element id must contain a number to trigger a tabledata slider.');
 			var detailContainer = $('#'+settings.detailIdPrefix+match[0]);
-			if (detailContainer.length == 0)throw new Error('No TD element found to be triggered. Check its id.')
-			if (detailContainer.prop('tagName')!='TD') throw new Error('Only TD elements can be triggered a tabledata slider. Element is a '+ detailContainer.prop('tagName')+' element');
+			if (detailContainer.length == 0)throw new Error('No TD element found to be a tabledata slider. Check its id.')
+			if (detailContainer.prop('tagName')!='TD') throw new Error('Only TD elements can be a tabledata slider 	. Element is a '+ detailContainer.prop('tagName')+' element');
 		// if not already slider
 			if ($(detailContainer).find('.tabledata-slider').length == 0){ 
 				var details = $(detailContainer).find('>*');
