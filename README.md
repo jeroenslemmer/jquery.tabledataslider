@@ -13,7 +13,7 @@
 <li>TR-elements (A) must have an id composed of a prefix (ig 'data') and a number (ig '567').<br>
 	For example: &lt;tr id="data567"&gt;</li>
 <li>TD-elements (B) must have an id composed of a prefix (ig 'detail') and a number (ig '567').<br>
-	For example: &lt;td id="detail567"&gt;</li>
+	For example: &lt;td id="detail567"&gt; If prefix is not 'detail' then use option detailIdPrefix, see below </li>
 <li>Numbers in id's of TR-elements (A) and corresponding TD-elements (B) should match.<br>
 	For example: '567' in &lt;tr id="data567"&gt; matches '567' in &lt;td id="detail567"&gt;<br></li>
 <li>TR-elements (A) can have a class attribute to be used as a selector. For example: &lt;tr class="data" ... &gt;</li>
@@ -27,7 +27,7 @@ For example: $('tr#data4').tabledataPerformSlide(true);
 
 <h4>CSS hooks</h4>
 <p>CSS style can be applied to the TR elements in 4 states:</p>
-<ul>
+<ul style="list-style:none;">
 	<li>tr[tabledata-slider=opened]</li>
 	<li>tr[tabledata-slider=closed]</li>
 	<li>tr[tabledata-slider=opening]</li>
