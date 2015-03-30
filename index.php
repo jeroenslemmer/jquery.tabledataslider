@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<title>sliding table data</title>
+		<meta charset="UTF-8"> 
 		<link rel="stylesheet" href="style.css" type="text/css">
 		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 		<script src="jquery.tabledataslider.js"></script>
