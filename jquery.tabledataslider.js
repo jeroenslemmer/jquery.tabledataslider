@@ -1,5 +1,5 @@
 /*
-	jQuery plugin: tabledataslider
+	jQuery plugin: tabledataslider 
 	Created: 29-3-2015
 	Copyright: (C) 2015. All rights reserved.GNU General Public License version 2 or later; 
   Author: Jeroen Slemmer
