@@ -8,16 +8,16 @@ The plugin enables  TR-elements (A) (by click event) to open/close corresponding
 	
 How to use?
 Include jquery.tabledataslider.js in the head of the webpage: 
-<script src="pathto/jquery.tabledataslider.js"></script> where pathto is the relative path to the directory where the script is stored.
-<pre>
+&lt;script src="pathto/jquery.tabledataslider.js"&gt;&lt;/script&gt; where pathto is the relative path to the directory where the script is stored.
+
 1)	TR-elements (A) must have an id composed of a prefix (ig 'data') and a number (ig '567'). 
-	For example: <tr id="data567">
+	For example: &lt;tr id="data567"&gt;
 2)	TD-elements (B) must have an id composed of a prefix (ig 'detail') and a number (ig '567'). 
-	For example: <td id="detail567">
+	For example: &lt;td id="detail567"&gt;
 3)	Numbers in id's of TR-elements (A) and corresponding TD-elements (B) should match.
-	For example: '567' in <tr id="data567"> matches '567' in <td id="detail567">
-</pre>
-TR-elements (A) can have a class attribute to be used as a selector. For example: <tr class="data" ... >
+	For example: '567' in &lt;tr id="data567"&gt; matches '567' in &lt;td id="detail567"&gt;
+
+TR-elements (A) can have a class attribute to be used as a selector. For example: &lt;tr class="data" ... &gt;
 	
 Activate them by invoking: $(selector).tabledataslider(options) where options is an object. For example: $('tr.data').tabledataslider({detailIdPrefix:'detail'})
 Possible options and its defaults: see below.
