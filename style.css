@@ -26,6 +26,9 @@ tr.data {
 	cursor : pointer;
 }
 
+tr.details {
+	display : none;
+}
 tr.details table td{
 	border : 1px solid #ddd;
 	padding : 0 3px;
