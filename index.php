@@ -10,7 +10,7 @@
 		<script>
 			$(function(){
 				$('tr.data').tabledataslider({detailIdPrefix:'detail'});
-				$('tr#data4').tabledataPerformSlide(true); 
+				$('tr.details').show();
 			});
 		</script>		
 	</head>
@@ -44,7 +44,7 @@
 								<?=$review['description']?> <a href="<?=$review['url']?>" target="_blank">more...</a>
 							</td>
 						</tr>
-	<?php
+<?php
 		endforeach;
 ?>
 					</table>
