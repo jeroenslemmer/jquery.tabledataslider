@@ -43,4 +43,17 @@ For example: $('tr#data4').tabledataPerformSlide(true);
 	<li>No TD element found to be a tabledata slider. Check its id.</li>
 	<li>Only TD elements can be a tabledata slider.</li>
 </ol>
+<h4>Options</h4>
+<ol>
+	<li><strong>detailIdPrefix</strong> type: string, default: 'detail', detail-TD id's start with this prefix;</li>
+	<li><strong>openFixedDuration</strong> type: integer, default: 700, fixed time in milliseconds taken to animate opening of detail-TD;</li>
+	<li><strong>closeFixedDuration</strong> type: integer, default: 300, fixed time in milliseconds taken to animate closing of detail-TD;</li>
+	<li><strong>openRelativeDuration</strong> type: integer, default: 0, milliseconds/pixel content height to animate opening of detail-TD;</li>
+	<li><strong>closeRelativeDuration</strong> type: integer, default: 0, milliseconds/pixel content height to animate closing of detail-TD;</li>	
+	<li><strong>detailMinHeight</strong> type: integer, default: 0, minimal height of detail-TD when closed;</li>
+	<li><strong>detailInitHeight</strong> type: integer, default: 0, initial height of detail-TD;</li>
+	<li><strong>toggleEvent</strong> type: string, default: 'click', event on which open/close should be performed;</li>
+	<li><strong>afterclosing</strong> type: function(){}, performed after opening detail-TD;</li>
+	<li><strong>afteropening</strong> type: function(){},performed after closing detail-TD.</li>
+</ol>
 
